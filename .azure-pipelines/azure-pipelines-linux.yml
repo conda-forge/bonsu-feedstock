@@ -10,28 +10,76 @@ jobs:
   strategy:
     maxParallel: 8
     matrix:
-      linux_hdf51.10.4python2.7:
-        CONFIG: linux_hdf51.10.4python2.7
+      linux_hdf51.10.4mpimpichpython2.7:
+        CONFIG: linux_hdf51.10.4mpimpichpython2.7
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_hdf51.10.4python3.6:
-        CONFIG: linux_hdf51.10.4python3.6
+      linux_hdf51.10.4mpimpichpython3.6:
+        CONFIG: linux_hdf51.10.4mpimpichpython3.6
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_hdf51.10.4python3.7:
-        CONFIG: linux_hdf51.10.4python3.7
+      linux_hdf51.10.4mpimpichpython3.7:
+        CONFIG: linux_hdf51.10.4mpimpichpython3.7
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_hdf51.10.5python2.7:
-        CONFIG: linux_hdf51.10.5python2.7
+      linux_hdf51.10.4mpinompipython2.7:
+        CONFIG: linux_hdf51.10.4mpinompipython2.7
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_hdf51.10.5python3.6:
-        CONFIG: linux_hdf51.10.5python3.6
+      linux_hdf51.10.4mpinompipython3.6:
+        CONFIG: linux_hdf51.10.4mpinompipython3.6
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_hdf51.10.5python3.7:
-        CONFIG: linux_hdf51.10.5python3.7
+      linux_hdf51.10.4mpinompipython3.7:
+        CONFIG: linux_hdf51.10.4mpinompipython3.7
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_hdf51.10.4mpiopenmpipython2.7:
+        CONFIG: linux_hdf51.10.4mpiopenmpipython2.7
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_hdf51.10.4mpiopenmpipython3.6:
+        CONFIG: linux_hdf51.10.4mpiopenmpipython3.6
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_hdf51.10.4mpiopenmpipython3.7:
+        CONFIG: linux_hdf51.10.4mpiopenmpipython3.7
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_hdf51.10.5mpimpichpython2.7:
+        CONFIG: linux_hdf51.10.5mpimpichpython2.7
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_hdf51.10.5mpimpichpython3.6:
+        CONFIG: linux_hdf51.10.5mpimpichpython3.6
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_hdf51.10.5mpimpichpython3.7:
+        CONFIG: linux_hdf51.10.5mpimpichpython3.7
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_hdf51.10.5mpinompipython2.7:
+        CONFIG: linux_hdf51.10.5mpinompipython2.7
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_hdf51.10.5mpinompipython3.6:
+        CONFIG: linux_hdf51.10.5mpinompipython3.6
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_hdf51.10.5mpinompipython3.7:
+        CONFIG: linux_hdf51.10.5mpinompipython3.7
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_hdf51.10.5mpiopenmpipython2.7:
+        CONFIG: linux_hdf51.10.5mpiopenmpipython2.7
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_hdf51.10.5mpiopenmpipython3.6:
+        CONFIG: linux_hdf51.10.5mpiopenmpipython3.6
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_hdf51.10.5mpiopenmpipython3.7:
+        CONFIG: linux_hdf51.10.5mpiopenmpipython3.7
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
   steps:
