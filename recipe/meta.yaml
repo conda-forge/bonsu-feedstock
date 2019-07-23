@@ -32,6 +32,7 @@ requirements:
     - hdf5
     - numpy
     - fftw
+    - {{ mpi }}  # [mpi != 'nompi']
   run:
     - python
     - pillow
@@ -40,6 +41,7 @@ requirements:
     - hdf5
     - numpy
     - fftw
+    - {{ mpi }}  # [mpi != 'nompi']
 
 test:
   imports:
