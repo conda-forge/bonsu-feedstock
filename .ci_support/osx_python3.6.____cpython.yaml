@@ -11,7 +11,7 @@ cxx_compiler_version:
 fftw:
 - '3'
 hdf5:
-- 1.10.5
+- 1.10.6
 macos_machine:
 - x86_64-apple-darwin13.4.0
 macos_min_version:
@@ -27,6 +27,6 @@ pin_run_as_build:
   vtk:
     max_pin: x.x.x
 python:
-- '3.7'
+- 3.6.* *_cpython
 vtk:
 - 8.2.0
