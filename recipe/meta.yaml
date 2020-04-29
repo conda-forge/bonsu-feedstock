@@ -1,21 +1,21 @@
 {% set name = "Bonsu" %}
-{% set version = "3.0.0" %}
+{% set version = "3.2.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d10e491325e5ff63e6a9d2aa8574cd25961e5796aa9ee666c50f24d27a80a5b6
+  sha256: 00bbf6430b42b381bbfa63312060dea27b766bc318bb2922874009dd3e8b8505
   patches:
     # submitted upstream as https://github.com/bonsudev/bonsu/pull/1
     - setup.py.patch
 
 build:
-  number: 1
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv --global-option=build_ext --global-option=-I$PREFIX/include"
-  skip: True  # [win]
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv --global-option=build_ext --global-option=-I$PREFIX/include
+  skip: true  # [win]
 
 requirements:
   build:
