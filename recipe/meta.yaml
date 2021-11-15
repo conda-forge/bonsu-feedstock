@@ -10,6 +10,7 @@ source:
   sha256: 628136d5d64ba8f833765740f5b80b2a0344085a476dce89e7fe16c06202f0db
   patches:
     - 0001-remove-missing-script.patch  # [win]
+    # Note: this patch can be removed once numpy 1.19 has landed for all python versions
     - 0002-remove-fftw-include-path.patch  # [win]
 build:
   number: 1
