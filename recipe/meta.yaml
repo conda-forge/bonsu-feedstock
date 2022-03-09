@@ -15,7 +15,7 @@ source:
 build:
   number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv --global-option=build_ext --global-option=-I$PREFIX/include
-  skip: true  # [py==310]
+  skip: true  # [py<39]
 
 requirements:
   build:
@@ -27,7 +27,7 @@ requirements:
     - setuptools
     - python
     - pillow
-    - wxpython <4.1
+    - wxpython
     - vtk
     - hdf5
     - h5py
@@ -36,7 +36,7 @@ requirements:
   run:
     - python
     - pillow
-    - wxpython <4.1
+    - wxpython
     - vtk
     - hdf5
     - h5py
