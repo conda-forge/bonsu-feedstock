@@ -20,29 +20,30 @@ build:
 
 requirements:
   build:
-    - {{ compiler('cxx') }}
-    - {{ stdlib("c") }}
     - {{ cdt('libXxf86vm') }}  # [linux]
     - {{ cdt('mesa-libgl') }}  # [linux]
+    - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
   host:
+    - cython
+    - fftw
+    - h5py
+    - hdf5
+    - pillow
     - pip
+    - python
     - setuptools
-    - python
-    - pillow
-    - wxpython
     - vtk
-    - hdf5
-    - h5py
-    - fftw
+    - wxpython >=4.2.0
   run:
-    - python
-    - pillow
-    - wxpython
-    - vtk
-    - hdf5
-    - h5py
-    - numpy <2.0.dev0
     - fftw
+    - h5py
+    - hdf5
+    - numpy <2.0.dev0
+    - pillow
+    - python
+    - vtk
+    - wxpython >=4.2.0
 
 test:
   imports:
