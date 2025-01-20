@@ -1,0 +1,25 @@
+From 7b3c5f425952800338db905eba3242615ae277d7 Mon Sep 17 00:00:00 2001
+From: Nicholas Devenish <ndevenish@gmail.com>
+Date: Mon, 20 Jan 2025 22:32:07 +0000
+Subject: [PATCH] Cython is not a runtime dependency
+
+---
+ pyproject.toml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/pyproject.toml b/pyproject.toml
+index fdbf61d..e09b391 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -13,7 +13,7 @@ readme = "README.md"
+ requires-python = ">=3.7"
+ keywords = ["Phase Retrieval", "Bragg Coherent Diffraction Imaging", "Synchrotron Science"]
+ license = {text = "GPL3"}
+-dependencies = ["wxpython >= 4.2.0", "numpy > 1.23.0", "vtk >= 8.0.0" ,"h5py", "pillow", "cython >= 3.0.0"]
++dependencies = ["wxpython >= 4.2.0", "numpy > 1.23.0", "vtk >= 8.0.0" ,"h5py", "pillow"]
+ 
+ 
+ [project.optional-dependencies]
+-- 
+2.46.2
+
