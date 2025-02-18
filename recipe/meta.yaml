@@ -12,7 +12,7 @@ source:
     - 0001-Cython-is-not-a-runtime-dependency.patch
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv --global-option=build_ext --global-option=-I$PREFIX/include
   entry_points:
     - bonsu = bonsu.interface.bonsu:main
