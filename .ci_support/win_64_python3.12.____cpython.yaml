@@ -5,7 +5,7 @@ channel_sources:
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- vs2019
+- vs2022
 fftw:
 - '3'
 hdf5:
@@ -19,4 +19,7 @@ python:
 target_platform:
 - win-64
 vtk:
-- 9.3.1
+- 9.4.2
+zip_keys:
+- - python
+  - channel_sources
