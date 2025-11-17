@@ -29,7 +29,8 @@ requirements:
     - h5py
     - hdf5
     - pillow
-    - pip
+    # pip 25.3 removed support for --global-option, see https://github.com/pypa/pip/issues/11859
+    - pip <25.3
     - python
     - setuptools
     - vtk
