@@ -12,15 +12,13 @@ source:
     - 0001-Cython-is-not-a-runtime-dependency.patch
 
 build:
-  number: 3
+  number: 4
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv --global-option=build_ext --global-option=-I$PREFIX/include
   entry_points:
     - bonsu = bonsu.interface.bonsu:main
 
 requirements:
   build:
-    - {{ cdt('libXxf86vm') }}  # [linux]
-    - {{ cdt('mesa-libgl') }}  # [linux]
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
   host:
